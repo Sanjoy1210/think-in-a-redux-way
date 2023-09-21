@@ -116,7 +116,7 @@ const reducer = (state = initialState, action) => {
         default:
             return state;
 
-    };
+    }
 }
 
 // create store
@@ -184,7 +184,7 @@ const incrementDecrementAndDelete = () => {
     });
 
     deleteBtns.forEach(btn => {
-        btn.addEventListener("click", function (e) {
+        btn.addEventListener("click", function () {
             const matchId = parseInt(this.dataset.matchId);
             store.dispatch(deleteMatch({ id: matchId }));
         });
@@ -203,7 +203,7 @@ render();
 // subscribe to the store
 store.subscribe(render);
 
-// evnet listeners
+// event listeners
 addMatchBtn.addEventListener("click", () => {
     const state = store.getState();
     const id = Math.max(state.matches.length, state.matches[state.matches.length - 1].id + 1);
