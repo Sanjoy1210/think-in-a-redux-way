@@ -11,18 +11,17 @@ const RESET = "reset";
 const DELETE_MATCH = "delete_match";
 
 // action creators
-const addMatch = () => {
+const addMatch = (payload) => {
     return {
         type: ADD_MATCH,
+        payload
     };
 }
 
-const deleteMatch = (id) => {
+const deleteMatch = (payload) => {
     return {
         type: DELETE_MATCH,
-        payload: {
-            id
-        }
+        payload
     };
 }
 
@@ -32,23 +31,17 @@ const resetScore = () => {
     };
 }
 
-const increment = (id, score) => {
+const increment = (payload) => {
     return {
         type: INCREMENT,
-        payload: {
-            id,
-            score
-        }
+        payload
     };
 }
 
-const decrement = (id, score) => {
+const decrement = (payload) => {
     return {
         type: DECREMENT,
-        payload: {
-            id,
-            score
-        }
+        payload
     };
 }
 
@@ -66,16 +59,11 @@ const initialState = {
 const reducer = (state = initialState, action) => {
     switch (action.type) {
         case ADD_MATCH:
-            const newMatch = {
-                id: state.matches.length + 1,
-                score: 0,
-            };
-
             return {
                 ...state,
                 matches: [
                     ...state.matches,
-                    newMatch
+                    action.payload
                 ]
             };
 
@@ -181,7 +169,7 @@ const incrementDecrementAndDelete = () => {
             const matchId = parseInt(this.dataset.matchId);
             const value = this.elements.increment.valueAsNumber;
 
-            store.dispatch(increment(matchId, value));
+            store.dispatch(increment({id: matchId, score: value}));
         });
     });
 
@@ -191,14 +179,14 @@ const incrementDecrementAndDelete = () => {
             const matchId = parseInt(this.dataset.matchId);
             const value = this.elements.decrement.valueAsNumber;
 
-            store.dispatch(decrement(matchId, value));
+            store.dispatch(decrement({ id: matchId, score: value }));
         });
     });
 
     deleteBtns.forEach(btn => {
         btn.addEventListener("click", function (e) {
             const matchId = parseInt(this.dataset.matchId);
-            store.dispatch(deleteMatch(matchId));
+            store.dispatch(deleteMatch({ id: matchId }));
         });
     });
 }
@@ -217,7 +205,9 @@ store.subscribe(render);
 
 // evnet listeners
 addMatchBtn.addEventListener("click", () => {
-    store.dispatch(addMatch());
+    const state = store.getState();
+    const id = Math.max(state.matches.length, state.matches[state.matches.length - 1].id + 1);
+    store.dispatch(addMatch({ id, score: 0 }));
 });
 
 resetBtn.addEventListener("click", () => {
