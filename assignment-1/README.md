@@ -13,3 +13,6 @@
 ✓ Decrement করতে থাকলে Total এর ভ্যালু কখনই শূন্য এর নিচে অর্থাৎ মাইনাস হবে না। ধরুন, Total এ ভ্যালু আছে 10, আপনি Decrement করলেন 15. টোটালের ভ্যালু হবে 0।
 
 ✓ Reset বাটন এ ক্লিক করলে সব Match এর স্কোর শূন্য (0) তে রিসেট হয়ে যাবে। উল্লেখ্য যে, যত গুলো ম্যাচ তৈরি করা হয়েছিল, ততগুলোই থাকবে শুধু মাত্র তাদের Total ভ্যালু Reset হয়ে শূন্য হয়ে যাবে।
+
+## Live Preview
+- [vanilla redux scoreboard app](https://vanilla-redux-scoreboard.netlify.app/)
