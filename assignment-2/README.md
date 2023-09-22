@@ -25,9 +25,9 @@ Go to the cloned project directory
 cd think-in-a-redux-way
 ```
 
-Checkout/switch to your desired branch. For example to switch to branch assignment-2
+Go to your desired project folder. For example go to assignment-2 folder
 ```sh
-git assignment-2
+cd assignment-2
 ```
 
 install the dependencies
