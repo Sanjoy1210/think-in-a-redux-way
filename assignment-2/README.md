@@ -51,3 +51,6 @@ yarn dev
 ```
 
 Your app should be available in http://localhost:5173/
+
+## Project live preview
+- [flight booking web app](https://flight-booking-web-app.netlify.app/)
