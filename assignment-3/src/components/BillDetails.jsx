@@ -1,6 +1,6 @@
 import {useSelector} from "react-redux";
 
-function BillDetails(props) {
+function BillDetails() {
     const cart = useSelector((state) => state.cart);
     const subTotal = cart?.reduce((total, item) => total + (item?.quantity * item?.price), 0);
 

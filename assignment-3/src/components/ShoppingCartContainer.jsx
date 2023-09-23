@@ -2,7 +2,7 @@ import BillDetails from "./BillDetails";
 import CartItem from "./CartItem";
 import {useSelector} from "react-redux";
 
-function ShoppingCartContainer(props) {
+function ShoppingCartContainer() {
     const cart = useSelector((state) => state.cart);
 
     return (

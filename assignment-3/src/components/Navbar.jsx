@@ -1,7 +1,7 @@
 import logo from "../assets/images/logo.png";
 import {useSelector} from "react-redux";
 
-function Navbar(props) {
+function Navbar() {
     const cart = useSelector((state) => state.cart);
     const totalItem = cart?.reduce((total, item) => total + item?.quantity, 0);
 
@@ -25,7 +25,7 @@ function Navbar(props) {
     return (
         <nav className="bg-[#171C2A] py-4">
             <div className="navBar">
-                <a href="index.html">
+                <a href="/" onClick={(e) => onClick(e, "/")}>
                     <img src={logo} alt="LWS" className="max-w-[140px]" />
                 </a>
 

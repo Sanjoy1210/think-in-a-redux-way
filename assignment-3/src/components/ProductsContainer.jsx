@@ -1,7 +1,7 @@
 import Product from "./Product";
 import {useSelector} from "react-redux";
 
-function ProductsContainer(props) {
+function ProductsContainer() {
     const products = useSelector((state) => state.products);
 
     return (
