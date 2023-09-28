@@ -1,0 +1,17 @@
+{
+  "name": "assignment-5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.6",
+    "node-fetch": "2",
+    "redux-logger": "^3.0.6"
+  }
+}
