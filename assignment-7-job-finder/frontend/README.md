@@ -1,0 +1,65 @@
+## এই এসাইনমেন্ট এ যা যা করতে হবেঃ
+
+✓ JSON সার্ভার থেকে Jobs গুলো Fetch করে নিয়ে এসে লিস্টে দেখাতে হবে। 'Internship', 'Full Time', 'Remote' জব এর জন্যে আলাদা আলাদা কালার কোড দেয়া আছে, সেই কালার কোড অনুযায়ী লিস্টে দেখাতে হবে।
+
+✓ সাইডবার থেকে 'Add New Job' এ ক্লিক করলে, React Router Dom ব্যবহার করে, 'Create' পেজে নিয়ে যেতে হবে এবং প্রয়োজনীয় তথ্য দিয়ে Save বাটনে ক্লিক করলে, সেটি Redux Store এ গিয়ে Save হয়ে যাবে।
+
+✓ সাইডবার থেকে 'All Available Jobs' এ ক্লিক করলে, সব গুলো জব দেখাবে, Internship এ ক্লিক করলে শুধুমাত্র 'Internship' এর জব গুলো দেখাবে। একইভাবে 'Full Time' এবং 'Remote' জব এ ক্লিক করলে শুধু মাত্র 'Full Time' এবং 'Remote' জব গুলোই ফিল্টার করে দেখাবে।
+
+✓ এডিট বাটনে ক্লিক করলে, এডিট পেজে নিয়ে যাবে এবং জব এর সব তথ্য গুলো এডিট করার ব্যবস্থা করে দিবে। তথ্য পরিবর্তন করে Edit বাটনে ক্লিক করলে তথ্য পরিবর্তন হয়ে 'All Available' পেজে চলে যাবে।
+
+✓ ডিলিট বাটনে ক্লিক করলে, ঐ জবটি ডিলিট হয়ে যাবে।
+
+✓ সার্চ ফিচার এড করতে হবে। সেক্ষেত্রে সার্চ করার সময় শুধুমাত্র জব এর টাইটেল দিয়ে জব সার্চ হবে এবং এটি ক্লাইন্ট সাইড এ করতে হবে, সার্ভার সাইডে করার প্রয়োজন নেই।
+
+✓ সার্চ এর পাশে ফিল্টার এর ড্রপডাউন আছে, সেখানে ক্লিক করলে Salary অনুযায়ী sorting হবে। অর্থাৎ কখনো বেতন 'কম থেকে বেশি' (ascending), আবার কখনো 'বেশি থেকে কম' (descending) এভাবে sort করে দেখাবে। এটি ক্লাইন্ট সাইড এ করতে হবে, সার্ভার সাইডে করার প্রয়োজন নেই।
+
+## Run the project in locally
+
+Clone this repository -
+
+```sh
+git clone https://github.com/Sanjoy1210/think-in-a-redux-way.git
+```
+
+Go to the cloned project directory
+
+```sh
+cd think-in-a-redux-way
+```
+
+Go to your desired project folder. For example go to assignment-2 folder
+
+```sh
+cd assignment-7
+```
+
+install the dependencies
+
+```sh
+npm i
+```
+
+or
+
+```sh
+yarn
+```
+
+start the development server
+
+```sh
+npm run dev
+```
+
+or
+
+```sh
+yarn dev
+```
+
+Your app should be available in http://localhost:5173/
+
+## Project live preview
+
+- [jobfinder web app](https://jobfinder-web.netlify.app/)
