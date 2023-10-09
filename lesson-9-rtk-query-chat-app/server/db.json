@@ -1,0 +1,536 @@
+{
+  "users": [
+    {
+      "email": "test1@gmail.com",
+      "password": "$2a$10$oDjgGnCz08IXBFi3QO3rPe/OUlRXL3GfS5RIK9YUD7ExIWB26m7M2",
+      "name": "Test 1",
+      "id": 1
+    },
+    {
+      "email": "test2@gmail.com",
+      "password": "$2a$10$63A97KT1G6rLFufniXZ5WOAFpzmtQrxSBjPJk1hYg06Awe3hdGJB2",
+      "name": "Test 2",
+      "id": 2
+    },
+    {
+      "email": "test3@gmail.com",
+      "password": "$2a$10$bxFB4QmRYWJ6QqB8grueC.QhS.4nkmGEOckcW5X7JmpjiBbUG3/ie",
+      "name": "Test 3",
+      "id": 3
+    },
+    {
+      "email": "test4@gmail.com",
+      "password": "$2a$10$f5YA62xoVGZkyez/qPPDOum5wLq9jg/ohcTKvqhlxMefnfKcdSPi.",
+      "name": "Test 4",
+      "id": 4
+    },
+    {
+      "email": "test5@gmail.com",
+      "password": "$2a$10$n673RXhhyD3XXFCTXRol8OPEF4DDvYxWeacKo2MlDh5iTzrnXAmTO",
+      "name": "Test 5",
+      "id": 5
+    },
+    {
+      "email": "test6@gmail.com",
+      "password": "$2a$10$n4gIAKtEQwptaTYLQpGknOHcR390F0asCTKYifpRwm70v.3.tnZPe",
+      "name": "Test 6",
+      "id": 6
+    },
+    {
+      "email": "test7@gmail.com",
+      "password": "$2a$10$iNjMWyvYxejTjjaz1M.4nuQZSIlpVIiwY5mHW1DXpoXKw32ROGhH6",
+      "name": "Test 7",
+      "id": 7
+    },
+    {
+      "email": "test8@gmail.com",
+      "password": "$2a$10$Y8Ie2DeUaTHAjq5dsgwrZe7k.EK34EnT2X9b8IBtM6/xy4h4xUTAG",
+      "name": "Test 8",
+      "id": 8
+    },
+    {
+      "email": "test9@gmail.com",
+      "password": "$2a$10$Bl06zarARs6GKvTx5Whyj.Ft.wJczdpsTV43/IaBVFQTku9ZHgtdm",
+      "name": "Test 9",
+      "id": 9
+    },
+    {
+      "email": "test10@gmail.com",
+      "password": "$2a$10$ZtCLEYX0ZAwqgxVCuKVysuGPby2GDmIZNqeeyUsNIVDr2H.KXxfgO",
+      "name": "Test 10",
+      "id": 10
+    },
+    {
+      "email": "test11@gmail.com",
+      "password": "$2a$10$tWYR3WKtErQbDttjs5BKDeYfA/7leRhe6mDZo7pUfWR1GjKhhDh9a",
+      "name": "Test 11",
+      "id": 11
+    },
+    {
+      "email": "test12@gmail.com",
+      "password": "$2a$10$VEWKOynAxX1Bx2fcEAWo0OdSoBztxjfzEByTr6mewaxvZFQRa5khW",
+      "name": "Test 12",
+      "id": 12
+    }
+  ],
+  "conversations": [
+    {
+      "participants": "test1@gmail.com-test2@gmail.com",
+      "users": [
+        {
+          "email": "test1@gmail.com",
+          "name": "Test 1",
+          "id": 1
+        },
+        {
+          "id": 2,
+          "name": "Test 2",
+          "email": "test2@gmail.com"
+        }
+      ],
+      "message": "Hello how are you?",
+      "timestamp": 1696864271147,
+      "id": 1
+    },
+    {
+      "participants": "test10@gmail.com-test1@gmail.com",
+      "users": [
+        {
+          "email": "test10@gmail.com",
+          "name": "Test 10",
+          "id": 10
+        },
+        {
+          "id": 1,
+          "name": "Test 1",
+          "email": "test1@gmail.com"
+        }
+      ],
+      "message": "asdlfj",
+      "timestamp": 1696875758913,
+      "id": 2
+    },
+    {
+      "participants": "test1@gmail.com-test9@gmail.com",
+      "users": [
+        {
+          "email": "test1@gmail.com",
+          "name": "Test 1",
+          "id": 1
+        },
+        {
+          "id": 9,
+          "name": "Test 9",
+          "email": "test9@gmail.com"
+        }
+      ],
+      "message": "what's up?",
+      "timestamp": 1696875587611,
+      "id": 3
+    },
+    {
+      "participants": "test1@gmail.com-test4@gmail.com",
+      "users": [
+        {
+          "email": "test1@gmail.com",
+          "name": "Test 1",
+          "id": 1
+        },
+        {
+          "id": 4,
+          "name": "Test 4",
+          "email": "test4@gmail.com"
+        }
+      ],
+      "message": "hello",
+      "timestamp": 1696875107049,
+      "id": 4
+    }
+  ],
+  "messages": [
+    {
+      "conversationId": 1,
+      "sender": {
+        "email": "test1@gmail.com",
+        "name": "Test 1",
+        "id": 1
+      },
+      "receiver": {
+        "id": 2,
+        "name": "Test 2",
+        "email": "test2@gmail.com"
+      },
+      "message": "Hello how are you?",
+      "timestamp": 1696864271147,
+      "id": 1
+    },
+    {
+      "conversationId": 2,
+      "sender": {
+        "email": "test1@gmail.com",
+        "name": "Test 1",
+        "id": 1
+      },
+      "receiver": {
+        "id": 10,
+        "name": "Test 10",
+        "email": "test10@gmail.com"
+      },
+      "message": "Hello ki obostha?",
+      "timestamp": 1696864305107,
+      "id": 2
+    },
+    {
+      "conversationId": 3,
+      "sender": {
+        "email": "test1@gmail.com",
+        "name": "Test 1",
+        "id": 1
+      },
+      "receiver": {
+        "id": 9,
+        "name": "Test 9",
+        "email": "test9@gmail.com"
+      },
+      "message": "Hey where are you?",
+      "timestamp": 1696864350138,
+      "id": 3
+    },
+    {
+      "conversationId": 4,
+      "sender": {
+        "email": "test1@gmail.com",
+        "name": "Test 1",
+        "id": 1
+      },
+      "receiver": {
+        "id": 4,
+        "name": "Test 4",
+        "email": "test4@gmail.com"
+      },
+      "message": "kire",
+      "timestamp": 1696864520008,
+      "id": 4
+    },
+    {
+      "conversationId": 4,
+      "sender": {
+        "email": "test1@gmail.com",
+        "name": "Test 1",
+        "id": 1
+      },
+      "receiver": {
+        "id": 4,
+        "name": "Test 4",
+        "email": "test4@gmail.com"
+      },
+      "message": "koi achos?",
+      "timestamp": 1696867399855,
+      "id": 5
+    },
+    {
+      "conversationId": 2,
+      "sender": {
+        "email": "test1@gmail.com",
+        "name": "Test 1",
+        "id": 1
+      },
+      "receiver": {
+        "id": 10,
+        "name": "Test 10",
+        "email": "test10@gmail.com"
+      },
+      "message": "ki mama",
+      "timestamp": 1696867410439,
+      "id": 6
+    },
+    {
+      "conversationId": 4,
+      "sender": {
+        "email": "test1@gmail.com",
+        "name": "Test 1",
+        "id": 1
+      },
+      "receiver": {
+        "id": 4,
+        "name": "Test 4",
+        "email": "test4@gmail.com"
+      },
+      "message": "kire 2",
+      "timestamp": 1696867514943,
+      "id": 7
+    },
+    {
+      "conversationId": 3,
+      "sender": {
+        "email": "test1@gmail.com",
+        "name": "Test 1",
+        "id": 1
+      },
+      "receiver": {
+        "id": 9,
+        "name": "Test 9",
+        "email": "test9@gmail.com"
+      },
+      "message": "hey you",
+      "timestamp": 1696868656529,
+      "id": 8
+    },
+    {
+      "conversationId": 2,
+      "sender": {
+        "email": "test1@gmail.com",
+        "name": "Test 1",
+        "id": 1
+      },
+      "receiver": {
+        "id": 10,
+        "name": "Test 10",
+        "email": "test10@gmail.com"
+      },
+      "message": "mamaaa",
+      "timestamp": 1696869661877,
+      "id": 9
+    },
+    {
+      "conversationId": 4,
+      "sender": {
+        "email": "test1@gmail.com",
+        "name": "Test 1",
+        "id": 1
+      },
+      "receiver": {
+        "id": 4,
+        "name": "Test 4",
+        "email": "test4@gmail.com"
+      },
+      "message": "hello",
+      "timestamp": 1696875107049,
+      "id": 10
+    },
+    {
+      "conversationId": 3,
+      "sender": {
+        "email": "test1@gmail.com",
+        "name": "Test 1",
+        "id": 1
+      },
+      "receiver": {
+        "id": 9,
+        "name": "Test 9",
+        "email": "test9@gmail.com"
+      },
+      "message": "what's up?",
+      "timestamp": 1696875587611,
+      "id": 11
+    },
+    {
+      "conversationId": 2,
+      "sender": {
+        "email": "test1@gmail.com",
+        "name": "Test 1",
+        "id": 1
+      },
+      "receiver": {
+        "id": 10,
+        "name": "Test 10",
+        "email": "test10@gmail.com"
+      },
+      "message": "mamaaaaa2",
+      "timestamp": 1696875659482,
+      "id": 12
+    },
+    {
+      "conversationId": 2,
+      "sender": {
+        "email": "test1@gmail.com",
+        "name": "Test 1",
+        "id": 1
+      },
+      "receiver": {
+        "id": 10,
+        "name": "Test 10",
+        "email": "test10@gmail.com"
+      },
+      "message": "mamaaaa3",
+      "timestamp": 1696875682554,
+      "id": 13
+    },
+    {
+      "conversationId": 2,
+      "sender": {
+        "email": "test10@gmail.com",
+        "name": "Test 10",
+        "id": 10
+      },
+      "receiver": {
+        "id": 1,
+        "name": "Test 1",
+        "email": "test1@gmail.com"
+      },
+      "message": "hey",
+      "timestamp": 1696875734714,
+      "id": 14
+    },
+    {
+      "conversationId": 2,
+      "sender": {
+        "email": "test10@gmail.com",
+        "name": "Test 10",
+        "id": 10
+      },
+      "receiver": {
+        "id": 1,
+        "name": "Test 1",
+        "email": "test1@gmail.com"
+      },
+      "message": "who",
+      "timestamp": 1696875740258,
+      "id": 15
+    },
+    {
+      "conversationId": 2,
+      "sender": {
+        "email": "test10@gmail.com",
+        "name": "Test 10",
+        "id": 10
+      },
+      "receiver": {
+        "id": 1,
+        "name": "Test 1",
+        "email": "test1@gmail.com"
+      },
+      "message": "are",
+      "timestamp": 1696875742025,
+      "id": 16
+    },
+    {
+      "conversationId": 2,
+      "sender": {
+        "email": "test10@gmail.com",
+        "name": "Test 10",
+        "id": 10
+      },
+      "receiver": {
+        "id": 1,
+        "name": "Test 1",
+        "email": "test1@gmail.com"
+      },
+      "message": "you",
+      "timestamp": 1696875743849,
+      "id": 17
+    },
+    {
+      "conversationId": 2,
+      "sender": {
+        "email": "test10@gmail.com",
+        "name": "Test 10",
+        "id": 10
+      },
+      "receiver": {
+        "id": 1,
+        "name": "Test 1",
+        "email": "test1@gmail.com"
+      },
+      "message": "asdlfj",
+      "timestamp": 1696875747065,
+      "id": 18
+    },
+    {
+      "conversationId": 2,
+      "sender": {
+        "email": "test10@gmail.com",
+        "name": "Test 10",
+        "id": 10
+      },
+      "receiver": {
+        "id": 1,
+        "name": "Test 1",
+        "email": "test1@gmail.com"
+      },
+      "message": "asdfljasdfasfjljs",
+      "timestamp": 1696875748873,
+      "id": 19
+    },
+    {
+      "conversationId": 2,
+      "sender": {
+        "email": "test10@gmail.com",
+        "name": "Test 10",
+        "id": 10
+      },
+      "receiver": {
+        "id": 1,
+        "name": "Test 1",
+        "email": "test1@gmail.com"
+      },
+      "message": "asfdlajsdfljlasdf",
+      "timestamp": 1696875750266,
+      "id": 20
+    },
+    {
+      "conversationId": 2,
+      "sender": {
+        "email": "test10@gmail.com",
+        "name": "Test 10",
+        "id": 10
+      },
+      "receiver": {
+        "id": 1,
+        "name": "Test 1",
+        "email": "test1@gmail.com"
+      },
+      "message": "asdflajsfllasfi",
+      "timestamp": 1696875751706,
+      "id": 21
+    },
+    {
+      "conversationId": 2,
+      "sender": {
+        "email": "test10@gmail.com",
+        "name": "Test 10",
+        "id": 10
+      },
+      "receiver": {
+        "id": 1,
+        "name": "Test 1",
+        "email": "test1@gmail.com"
+      },
+      "message": "kire ",
+      "timestamp": 1696875755577,
+      "id": 22
+    },
+    {
+      "conversationId": 2,
+      "sender": {
+        "email": "test10@gmail.com",
+        "name": "Test 10",
+        "id": 10
+      },
+      "receiver": {
+        "id": 1,
+        "name": "Test 1",
+        "email": "test1@gmail.com"
+      },
+      "message": ".......",
+      "timestamp": 1696875757465,
+      "id": 23
+    },
+    {
+      "conversationId": 2,
+      "sender": {
+        "email": "test10@gmail.com",
+        "name": "Test 10",
+        "id": 10
+      },
+      "receiver": {
+        "id": 1,
+        "name": "Test 1",
+        "email": "test1@gmail.com"
+      },
+      "message": "asdlfj",
+      "timestamp": 1696875758913,
+      "id": 24
+    }
+  ]
+}
