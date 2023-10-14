@@ -72,4 +72,4 @@ Your app should be available in http://localhost:5173/
 
 ## Project live preview
 
-- [book shop rtk-query app](https://book-shop-rtk-query.netlify.app/)
+- [task manager rtk-query app](https://task-manager-rtk-query-web.netlify.app/)
